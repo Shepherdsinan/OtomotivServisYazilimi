@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EROTO2020Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ARAC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="SASE_NO" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="MOTOR_NO" Type="char" MaxLength="25" />
+    <Property Name="ARC_MODEL_KODU" Type="char" MaxLength="15" />
+    <Property Name="ARC_MODEL_TRH" Type="smallint" />
+    <Property Name="CARI_KOD" Type="char" MaxLength="11" />
+    <Property Name="PLAKA" Type="char" MaxLength="15" />
+    <Property Name="DEPO_KODU" Type="char" MaxLength="11" />
+    <Property Name="BARKODU" Type="char" MaxLength="27" />
+    <Property Name="OZEL" Type="char" MaxLength="5" />
+    <Property Name="ATF" Type="float" />
+    <Property Name="KDV_SIZ" Type="float" />
+    <Property Name="KDV" Type="float" />
+    <Property Name="EKTAVPRM" Type="char" MaxLength="1" />
+    <Property Name="SPOR" Type="char" MaxLength="1" />
+    <Property Name="KULL_SEKLI" Type="char" MaxLength="1" />
+    <Property Name="TARIFE_NO" Type="char" MaxLength="11" />
+    <Property Name="ARC_RENK_KODU" Type="char" MaxLength="11" />
+    <Property Name="GARANTI_BAS" Type="datetime" />
+    <Property Name="GARANTI_BIT" Type="datetime" />
+    <Property Name="GAR_SERI_NO1" Type="char" MaxLength="10" />
+    <Property Name="GAR_SERI_NO2" Type="char" MaxLength="10" />
+    <Property Name="GARANTI_PUANI" Type="float" />
+    <Property Name="GARANTI_KALAN_PUANI" Type="float" />
+    <Property Name="FATURA_NO" Type="varchar" MaxLength="25" />
+    <Property Name="FAT_TRH" Type="datetime" />
+    <Property Name="SIP_TRH" Type="datetime" />
+    <Property Name="SIP_NO" Type="char" MaxLength="17" />
+    <Property Name="AL_FAT_TRH" Type="datetime" />
+    <Property Name="ALIS_FAT_NO" Type="varchar" MaxLength="25" />
+    <Property Name="BSATIS_NO" Type="float" />
+    <Property Name="ANAHTAR_NO" Type="char" MaxLength="15" />
+    <Property Name="FIKTIF" Type="char" MaxLength="1" />
+    <Property Name="YP_YUZDE" Type="float" />
+    <Property Name="KAMPANYA" Type="smallint" />
+    <Property Name="ARAC_TIP" Type="char" MaxLength="3" />
+    <Property Name="NOTLAR" Type="varchar" MaxLength="80" />
+    <Property Name="BAYI_KOD" Type="char" MaxLength="11" />
+    <Property Name="OTV" Type="float" />
+    <Property Name="ARAC_BEDEL" Type="float" />
+    <Property Name="OTV_TUT" Type="float" />
+    <Property Name="OTV_IST" Type="float" />
+    <Property Name="KDV_TUT" Type="float" />
+    <Property Name="MAS_TOP" Type="float" />
+    <Property Name="SGBASTRH" Type="datetime" />
+    <Property Name="SGBITRH" Type="datetime" />
+    <Property Name="MUAYENE_TRH" Type="smalldatetime" />
+    <Property Name="EKSOZ_TRH" Type="smalldatetime" />
+    <Property Name="KASKA_TRH" Type="smalldatetime" />
+    <Property Name="OTPA" Type="varchar" MaxLength="15" />
+    <Property Name="TRF_CIKIS_TRH" Type="datetime" />
+    <Property Name="IC_RENK" Type="varchar" MaxLength="11" />
+    <Property Name="AKTIF" Type="char" MaxLength="1" />
+    <Property Name="KIRA_FYT_SAAT" Type="float" />
+    <Property Name="KIRA_FYT_GUN" Type="float" />
+    <Property Name="KIRA_FYT_HAFTA" Type="float" />
+    <Property Name="KIRA_FYT_AY" Type="float" />
+    <Property Name="KIRA_FYT_YIL" Type="float" />
+    <Property Name="GEC_FAIZ_SAAT" Type="float" />
+    <Property Name="GEC_FAIZ_GUN" Type="float" />
+    <Property Name="GEC_FAIZ_HAFTA" Type="float" />
+    <Property Name="GEC_FAIZ_AY" Type="float" />
+    <Property Name="EKSOZ_BITTRH" Type="datetime" />
+    <Property Name="MUAYENE_BITTRH" Type="datetime" />
+    <Property Name="KASKO_BITTRH" Type="datetime" />
+    <Property Name="INS_DATE" Type="datetime" />
+    <Property Name="INS_USER" Type="varchar" MaxLength="32" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_USER" Type="varchar" MaxLength="32" />
+    <Property Name="MALIYET_FYT_TL" Type="float" />
+    <Property Name="SANZIMAN_NO" Type="varchar" MaxLength="20" />
+    <Property Name="EK_GARANTIGUN" Type="int" />
+    <Property Name="STATU1" Type="char" MaxLength="1" />
+    <Property Name="STATU2" Type="char" MaxLength="1" />
+    <Property Name="SUBEKODU" Type="smallint" />
+    <Property Name="RUHSAT_SERINO" Type="varchar" MaxLength="30" />
+    <Property Name="PER_KOD_ZIMMET" Type="varchar" MaxLength="11" />
+    <Property Name="PER_ADI_ZIMMET" Type="varchar" MaxLength="30" />
+    <Property Name="K2BAS_TRH" Type="datetime" />
+    <Property Name="K2BIT_TRH" Type="datetime" />
+    <Property Name="K2BELGE_TUTAR" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="YAKIT_LIMIT_LT" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="YAKIT_LIMIT_TUTAR" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="RUHSAT_SINIF" Type="varchar" MaxLength="5" />
+    <Property Name="HGS_SINIF" Type="varchar" MaxLength="1" />
+    <Property Name="HGS_NO" Type="varchar" MaxLength="15" />
+    <Property Name="TTS_DURUM" Type="char" MaxLength="1" />
+    <Property Name="TTS_CIHAZTIP" Type="varchar" MaxLength="15" />
+    <Property Name="GPS_DURUM" Type="char" MaxLength="1" />
+    <Property Name="SATIS_BEDEL" Type="float" />
+    <Property Name="K2_DURUM" Type="char" MaxLength="1" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CARI">
+    <Key>
+      <PropertyRef Name="CARI_KOD" />
+    </Key>
+    <Property Name="CARI_KOD" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="FIRMA_ADI" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="YETKILI_ADI" Type="varchar" MaxLength="25" />
+    <Property Name="YETKILI_SOYAD" Type="varchar" MaxLength="25" />
+    <Property Name="ADRES_1" Type="varchar" MaxLength="100" />
+    <Property Name="ADRES_2" Type="varchar" MaxLength="100" />
+    <Property Name="PK" Type="varchar" MaxLength="8" />
+    <Property Name="SEMT" Type="varchar" MaxLength="25" />
+    <Property Name="ILI" Type="varchar" MaxLength="25" />
+    <Property Name="ULKE" Type="varchar" MaxLength="25" />
+    <Property Name="TEL1" Type="varchar" MaxLength="17" />
+    <Property Name="TEL2" Type="varchar" MaxLength="17" />
+    <Property Name="TEL3" Type="varchar" MaxLength="17" />
+    <Property Name="FAKS" Type="varchar" MaxLength="17" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="150" />
+    <Property Name="URL" Type="varchar" MaxLength="50" />
+    <Property Name="MESLEK_KOD" Type="varchar" MaxLength="20" />
+    <Property Name="VD" Type="varchar" MaxLength="20" />
+    <Property Name="VN" Type="varchar" MaxLength="17" />
+    <Property Name="CINSIYET" Type="varchar" MaxLength="1" />
+    <Property Name="BANKA_1" Type="varchar" MaxLength="15" />
+    <Property Name="BANKA_2" Type="varchar" MaxLength="15" />
+    <Property Name="SERMAYE" Type="float" />
+    <Property Name="TEMINAT_1" Type="float" />
+    <Property Name="TEMINAT_2" Type="float" />
+    <Property Name="TEM_BANK_1" Type="varchar" MaxLength="15" />
+    <Property Name="TEM_BANK_2" Type="varchar" MaxLength="15" />
+    <Property Name="CARI_GRP_KOD" Type="char" MaxLength="1" />
+    <Property Name="RISK_LIMITI" Type="float" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="80" />
+    <Property Name="IND_YUZ_PAR" Type="smallint" />
+    <Property Name="IND_YUZ_AKS" Type="smallint" />
+    <Property Name="IND_YUZ_SRF" Type="smallint" />
+    <Property Name="IND_YUZ_ISCI" Type="smallint" />
+    <Property Name="IND_YUZ_HSR" Type="smallint" />
+    <Property Name="IND_YUZ_BKM" Type="smallint" />
+    <Property Name="IND_YUZ_ARZ" Type="smallint" />
+    <Property Name="DOVIZ" Type="varchar" MaxLength="5" />
+    <Property Name="BABA_ADI" Type="varchar" MaxLength="20" />
+    <Property Name="DOGUM_YERI" Type="varchar" MaxLength="20" />
+    <Property Name="DOGUM_YIL" Type="varchar" MaxLength="4" />
+    <Property Name="DOGUM_TRH" Type="datetime" />
+    <Property Name="MUH_KOD" Type="varchar" MaxLength="30" />
+    <Property Name="AKTARILDI" Type="bit" Nullable="false" />
+    <Property Name="VADEGUN" Type="smallint" />
+    <Property Name="SIGORTA" Type="char" MaxLength="1" />
+    <Property Name="ILETISIM_YOK" Type="char" MaxLength="1" />
+    <Property Name="TEL4" Type="varchar" MaxLength="17" />
+    <Property Name="KIMLIKNO" Type="varchar" MaxLength="15" />
+    <Property Name="PMNO" Type="float" />
+    <Property Name="FIRMA_ADI2" Type="varchar" MaxLength="45" />
+    <Property Name="OZEL_KOD_1" Type="varchar" MaxLength="20" />
+    <Property Name="OZEL_KOD_2" Type="varchar" MaxLength="20" />
+    <Property Name="OZEL_KOD_3" Type="varchar" MaxLength="20" />
+    <Property Name="PER_KOD" Type="varchar" MaxLength="11" />
+    <Property Name="TAH_SEKLI" Type="char" MaxLength="1" />
+    <Property Name="KAYIT_TRH" Type="datetime" />
+    <Property Name="MERKEZ_BAYI" Type="char" MaxLength="11" />
+    <Property Name="ANA_ADI" Type="varchar" MaxLength="20" />
+    <Property Name="N_SERI" Type="char" MaxLength="3" />
+    <Property Name="N_NO" Type="char" MaxLength="6" />
+    <Property Name="N_IL" Type="varchar" MaxLength="25" />
+    <Property Name="N_ILCE" Type="varchar" MaxLength="25" />
+    <Property Name="N_CILTNO" Type="char" MaxLength="4" />
+    <Property Name="N_AILESIRANO" Type="char" MaxLength="5" />
+    <Property Name="N_SIRANO" Type="char" MaxLength="4" />
+    <Property Name="KANGRUBU" Type="varchar" MaxLength="7" />
+    <Property Name="EHL_VER_YER" Type="varchar" MaxLength="25" />
+    <Property Name="EHL_VER_TRH" Type="smalldatetime" />
+    <Property Name="EHL_NO" Type="varchar" MaxLength="7" />
+    <Property Name="EHL_SINIF" Type="char" MaxLength="1" />
+    <Property Name="EHL_ACIKLAMA" Type="varchar" MaxLength="100" />
+    <Property Name="PSP_VER_YER" Type="varchar" MaxLength="25" />
+    <Property Name="PSP_VER_TRH" Type="smalldatetime" />
+    <Property Name="PSP_NO" Type="varchar" MaxLength="7" />
+    <Property Name="PSP_ACIKLAMA" Type="varchar" MaxLength="100" />
+    <Property Name="WEB_AKTAR" Type="smallint" />
+    <Property Name="INS_DATE" Type="datetime" />
+    <Property Name="INS_USER" Type="varchar" MaxLength="32" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_USER" Type="varchar" MaxLength="32" />
+    <Property Name="EF_UNVAN" Type="varchar" MaxLength="255" />
+    <Property Name="SOKAK" Type="varchar" MaxLength="100" />
+    <Property Name="KAPI_NO" Type="varchar" MaxLength="25" />
+    <Property Name="DAIRE_NO" Type="varchar" MaxLength="25" />
+    <Property Name="EF_MUKELLEF" Type="tinyint" />
+    <Property Name="EI_MUKELLEF" Type="tinyint" />
+    <Property Name="ENT_KOD" Type="varchar" MaxLength="30" />
+    <Property Name="VERSIP_VAR" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ISEAYRIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ISEMRI_NO" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="TIP" Type="char" MaxLength="1" />
+    <Property Name="SIRANO" Type="smallint" />
+    <Property Name="STOK_NO" Type="float" />
+    <Property Name="YEDEK_P_ADI" Type="varchar" MaxLength="60" />
+    <Property Name="STOK_KOD_NO" Type="varchar" MaxLength="25" />
+    <Property Name="STOK_MIKTAR" Type="float" />
+    <Property Name="VERILEN_MIKTAR" Type="float" />
+    <Property Name="TESLIM_MIKTAR" Type="float" />
+    <Property Name="STOK_FIYATI" Type="float" />
+    <Property Name="FYT_USD" Type="float" />
+    <Property Name="KDV" Type="float" />
+    <Property Name="GARANTI_TIPI" Type="char" MaxLength="1" />
+    <Property Name="ISLEM_ACIKLAMASI" Type="varchar" MaxLength="200" />
+    <Property Name="CLAIM_TURU" Type="char" MaxLength="1" />
+    <Property Name="ARIZA_KODU" Type="char" MaxLength="15" />
+    <Property Name="S" Type="char" MaxLength="1" />
+    <Property Name="EXP" Type="char" MaxLength="1" />
+    <Property Name="TESLIM_TRH" Type="datetime" />
+    <Property Name="FATURANO" Type="float" />
+    <Property Name="CLAIMNO" Type="float" />
+    <Property Name="ISK_ORAN" Type="float" />
+    <Property Name="FYT_DOVIZ" Type="float" />
+    <Property Name="DOVIZ_KODU" Type="char" MaxLength="5" />
+    <Property Name="TL_KURDEGER" Type="float" />
+    <Property Name="FYILI" Type="smallint" />
+    <Property Name="DEPO_KODU" Type="varchar" MaxLength="11" />
+    <Property Name="PER_KOD" Type="varchar" MaxLength="11" />
+    <Property Name="PAKETNO" Type="float" />
+    <Property Name="KAMPNO" Type="int" />
+    <Property Name="INS_DATE" Type="datetime" />
+    <Property Name="INS_USER" Type="varchar" MaxLength="32" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_USER" Type="varchar" MaxLength="32" />
+    <Property Name="GRUP_DEGER" Type="float" />
+    <Property Name="SERINO" Type="varchar" MaxLength="30" />
+    <Property Name="ISC_SIRANO" Type="smallint" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ISEMRI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="IS_EMRI_NO" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="IE_TIP" Type="char" MaxLength="1" />
+    <Property Name="SERVIS_KOD" Type="char" MaxLength="11" />
+    <Property Name="IS_ENO" Type="char" MaxLength="7" />
+    <Property Name="CARI_KOD" Type="char" MaxLength="11" />
+    <Property Name="ARAC_TIP" Type="char" MaxLength="15" />
+    <Property Name="ARAC_MODEL" Type="char" MaxLength="6" />
+    <Property Name="SASI_NO" Type="char" MaxLength="25" />
+    <Property Name="MOTOR_NO" Type="char" MaxLength="25" />
+    <Property Name="KM" Type="float" />
+    <Property Name="TESLIM_TRH" Type="datetime" />
+    <Property Name="RENK_KOD" Type="char" MaxLength="11" />
+    <Property Name="PLAKA_NO" Type="char" MaxLength="15" />
+    <Property Name="GARANTI_NO" Type="varchar" MaxLength="10" />
+    <Property Name="ARAC_GIRIS_TRH" Type="datetime" />
+    <Property Name="ARAC_GIRIS_SAAT" Type="datetime" />
+    <Property Name="TAHMINI_TES_TRH" Type="datetime" />
+    <Property Name="TAH_TES_SAAT" Type="datetime" />
+    <Property Name="VURUK" Type="bit" />
+    <Property Name="CIZIK" Type="bit" />
+    <Property Name="PAS" Type="bit" />
+    <Property Name="BOYA_HATA" Type="bit" />
+    <Property Name="PDI_TUTAR" Type="float" />
+    <Property Name="HASAR_TUTAR" Type="float" />
+    <Property Name="ARIZA_TUTAR" Type="float" />
+    <Property Name="PDI_IS_TUTAR" Type="float" />
+    <Property Name="ARZ_IS_TUTAR" Type="float" />
+    <Property Name="HASAR_IS_TUTAR" Type="float" />
+    <Property Name="PAR_TOP_TUTAR" Type="float" />
+    <Property Name="IS_TOP_TUTAR" Type="float" />
+    <Property Name="TOP_TUTAR" Type="float" />
+    <Property Name="GARANTI_BITIS" Type="datetime" />
+    <Property Name="DEPO_YAP" Type="char" MaxLength="1" />
+    <Property Name="DISPOZ_YAP" Type="char" MaxLength="1" />
+    <Property Name="KAPANDI" Type="char" MaxLength="1" />
+    <Property Name="AY" Type="smallint" />
+    <Property Name="YIL" Type="smallint" />
+    <Property Name="MUSTALIM_1" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_2" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_3" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_4" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_5" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_6" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_7" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_8" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_9" Type="varchar" MaxLength="80" />
+    <Property Name="MUSTALIM_10" Type="varchar" MaxLength="80" />
+    <Property Name="GENEL_DUR" Type="varchar" MaxLength="250" />
+    <Property Name="CAKMAK" Type="bit" />
+    <Property Name="RADYO_TEYP" Type="bit" />
+    <Property Name="AVADANLIK" Type="bit" />
+    <Property Name="KRIKO" Type="bit" />
+    <Property Name="RUHSAT" Type="bit" />
+    <Property Name="STEPNE" Type="bit" />
+    <Property Name="DIGER_EMANET" Type="text" />
+    <Property Name="YAKIT_MIK" Type="char" MaxLength="7" />
+    <Property Name="ARAC_TESLIM_ALAN" Type="char" MaxLength="11" />
+    <Property Name="YP_TESLIM_ALAN" Type="char" MaxLength="11" />
+    <Property Name="S" Type="char" MaxLength="1" />
+    <Property Name="GARANTI_PUANI" Type="float" />
+    <Property Name="GARANTI_KALAN_PUANI" Type="float" />
+    <Property Name="IE_GAR_HARCA_PUAN" Type="float" />
+    <Property Name="TEKRAR" Type="char" MaxLength="1" />
+    <Property Name="YABANCI_ARAC" Type="char" MaxLength="1" />
+    <Property Name="KAMPANYA" Type="smallint" />
+    <Property Name="IPTAL" Type="char" MaxLength="1" />
+    <Property Name="AKTARILDI" Type="char" MaxLength="1" />
+    <Property Name="TESLIM_EDEN" Type="varchar" MaxLength="20" />
+    <Property Name="KAMPIE_NO" Type="float" />
+    <Property Name="TEKLIF_NO" Type="float" />
+    <Property Name="FYILI" Type="smallint" />
+    <Property Name="TESLIM_ED_TEL" Type="varchar" MaxLength="17" />
+    <Property Name="PAR_ISK" Type="float" />
+    <Property Name="ISC_ISK" Type="float" />
+    <Property Name="GAR_TUT" Type="float" />
+    <Property Name="ARA_TUT" Type="float" />
+    <Property Name="KDV_TUT" Type="float" />
+    <Property Name="NET_TUT" Type="float" />
+    <Property Name="HASAR" Type="char" MaxLength="1" />
+    <Property Name="IC_RENK" Type="varchar" MaxLength="11" />
+    <Property Name="KULLANIM_SEKLI" Type="char" MaxLength="1" />
+    <Property Name="YPTESLIMEDEN" Type="varchar" MaxLength="11" />
+    <Property Name="SIGORTA" Type="varchar" MaxLength="36" />
+    <Property Name="PER_KOD" Type="varchar" MaxLength="11" />
+    <Property Name="KAPANIS_DOK" Type="tinyint" />
+    <Property Name="KAPANIS_NOTU" Type="varchar" MaxLength="500" />
+    <Property Name="IE_ALTTIP" Type="char" MaxLength="10" />
+    <Property Name="INS_DATE" Type="datetime" />
+    <Property Name="INS_USER" Type="varchar" MaxLength="32" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_USER" Type="varchar" MaxLength="32" />
+    <Property Name="ARIZA_BTRH" Type="datetime" />
+    <Property Name="HASAR_DURUM" Type="char" MaxLength="1" />
+    <Property Name="DIGER1" Type="tinyint" />
+    <Property Name="LD_SOL_ON" Type="float" />
+    <Property Name="LD_SOL_ARKA" Type="float" />
+    <Property Name="LD_SAG_ON" Type="float" />
+    <Property Name="LD_SAG_ARKA" Type="float" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="250" />
+    <Property Name="TAHMINI_ISLER_1" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_2" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_3" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_4" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_5" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_6" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_ISLER_7" Type="varchar" MaxLength="200" />
+    <Property Name="TAHMINI_YP_TUT" Type="float" />
+    <Property Name="TAHMINI_ISC_TUT" Type="float" />
+    <Property Name="TAHMINI_KDVLI_TUT" Type="float" />
+    <Property Name="TAHMINI_KDVSIZ_TUT" Type="float" />
+    <Property Name="ONARIM_BELGE" Type="tinyint" />
+    <Property Name="CIKIS_TRH" Type="datetime" />
+    <Property Name="TTT" Type="datetime" />
+    <Property Name="ATOLYE" Type="char" MaxLength="1" />
+    <Property Name="DURUM" Type="char" MaxLength="1" />
+    <Property Name="TESLIM_ALAN2" Type="varchar" MaxLength="11" />
+    <Property Name="KM_RESET" Type="tinyint" />
+    <Property Name="PLANID_1" Type="int" />
+    <Property Name="PLANID_2" Type="int" />
+    <Property Name="PLANID_3" Type="int" />
+    <Property Name="PLANID_4" Type="int" />
+    <Property Name="PLANID_5" Type="int" />
+    <Property Name="PLANID_6" Type="int" />
+    <Property Name="PLANID_7" Type="int" />
+    <Property Name="PLANID_8" Type="int" />
+    <Property Name="PLANID_9" Type="int" />
+    <Property Name="PLANID_10" Type="int" />
+    <Property Name="MUSOK_1" Type="tinyint" />
+    <Property Name="MUSOK_2" Type="tinyint" />
+    <Property Name="MUSOK_3" Type="tinyint" />
+    <Property Name="MUSOK_4" Type="tinyint" />
+    <Property Name="MUSOK_5" Type="tinyint" />
+    <Property Name="MUSOK_6" Type="tinyint" />
+    <Property Name="MUSOK_7" Type="tinyint" />
+    <Property Name="MUSOK_8" Type="tinyint" />
+    <Property Name="MUSOK_9" Type="tinyint" />
+    <Property Name="MUSOK_10" Type="tinyint" />
+    <Property Name="SUBEKODU" Type="smallint" />
+    <Property Name="SUBEKODU2" Type="smallint" />
+    <Property Name="IPNO" Type="float" />
+    <Property Name="IKAME_PLAKA" Type="varchar" MaxLength="15" />
+    <Property Name="LD_SAG_ARKAIC" Type="float" />
+    <Property Name="LD_SOL_ARKAIC" Type="float" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MODEL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ARC_MODEL_KODU" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ARC_MODEL_ADI" Type="varchar" MaxLength="60" />
+    <Property Name="MARKA" Type="varchar" MaxLength="15" />
+    <Property Name="MODEL" Type="varchar" MaxLength="15" />
+    <Property Name="CINS" Type="varchar" MaxLength="15" />
+    <Property Name="ARC_SERI" Type="varchar" MaxLength="15" />
+    <Property Name="MOTOR_TIP" Type="varchar" MaxLength="15" />
+    <Property Name="MOTOR_SILIN_SAY" Type="varchar" MaxLength="15" />
+    <Property Name="MOTOR_HACIM" Type="varchar" MaxLength="15" />
+    <Property Name="MOTOR_GUC" Type="smallint" />
+    <Property Name="VITES" Type="varchar" MaxLength="15" />
+    <Property Name="AGIRLIK" Type="smallint" />
+    <Property Name="GOVDE_TIP" Type="varchar" MaxLength="15" />
+    <Property Name="TRIM_TIP" Type="varchar" MaxLength="15" />
+    <Property Name="BOY" Type="smallint" />
+    <Property Name="EN" Type="smallint" />
+    <Property Name="YUKSEKLIK" Type="smallint" />
+    <Property Name="SANZIMAN_TIPI" Type="varchar" MaxLength="20" />
+    <Property Name="AKSESUAR" Type="varchar" MaxLength="40" />
+    <Property Name="SIPARIS_SEV" Type="varchar" MaxLength="3" />
+    <Property Name="MIN_STOK_SEV" Type="varchar" MaxLength="3" />
+    <Property Name="MAX_STOK_SEV" Type="varchar" MaxLength="3" />
+    <Property Name="SIPARIS_SURESI" Type="smallint" />
+    <Property Name="ISKONTO_GRP" Type="varchar" MaxLength="2" />
+    <Property Name="D_BASI_STK_MIK" Type="float" />
+    <Property Name="D_BASI_STK_DEGERI" Type="float" />
+    <Property Name="MALIYET_FYT_TL" Type="float" />
+    <Property Name="MALIYET_FYT_USD" Type="float" />
+    <Property Name="MALIYET_FYT_DOVIZ" Type="float" />
+    <Property Name="SATIS_FIYAT_TL" Type="float" />
+    <Property Name="SATIS_FIYAT_USD" Type="float" />
+    <Property Name="SATIS_FIYAT_DOVIZ" Type="float" />
+    <Property Name="ALISFIYAT_TL" Type="float" />
+    <Property Name="ALISFIYAT_USD" Type="float" />
+    <Property Name="ALISFIYAT_DOVIZ" Type="float" />
+    <Property Name="FYT_KUR" Type="varchar" MaxLength="5" />
+    <Property Name="KAR_ORANI" Type="float" />
+    <Property Name="VERGILER" Type="float" />
+    <Property Name="RADYO_TEYP" Type="bit" />
+    <Property Name="CAKMAK" Type="bit" />
+    <Property Name="AVANDANLIK" Type="bit" />
+    <Property Name="KRIKO" Type="bit" />
+    <Property Name="STEPNE" Type="bit" />
+    <Property Name="RUHSAT" Type="bit" />
+    <Property Name="KDV" Type="float" />
+    <Property Name="YAKIT_TIPI" Type="varchar" MaxLength="15" />
+    <Property Name="RESIM" Type="image" />
+    <Property Name="OTURMA_YERI" Type="varchar" MaxLength="15" />
+    <Property Name="TAV_KOD" Type="varchar" MaxLength="11" />
+    <Property Name="MODEL_YIL" Type="smallint" />
+    <Property Name="CAP" Type="varchar" MaxLength="15" />
+    <Property Name="SIP_VERILEBILIR" Type="bit" />
+    <Property Name="OZEL1" Type="varchar" MaxLength="10" />
+    <Property Name="OZEL2" Type="varchar" MaxLength="10" />
+    <Property Name="MUH_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_IADE_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_ISK_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_KDV_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_IADE_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_ISK_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_KDV_A" Type="varchar" MaxLength="30" />
+    <Property Name="AKTARMA" Type="varchar" MaxLength="15" />
+    <Property Name="SUBAP_ADET" Type="smallint" />
+    <Property Name="YAKIT_TUK1" Type="float" />
+    <Property Name="YAKIT_TUK2" Type="float" />
+    <Property Name="DEPO_HACIM" Type="float" />
+    <Property Name="BAGAJ_HACIM" Type="float" />
+    <Property Name="KATALITIK" Type="char" MaxLength="1" />
+    <Property Name="CLAIM_ARCTIP" Type="varchar" MaxLength="15" />
+    <Property Name="OTV" Type="float" />
+    <Property Name="MUH_OTV_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_OTV_S" Type="varchar" MaxLength="30" />
+    <Property Name="POQ_VER" Type="bit" Nullable="false" />
+    <Property Name="NETAGIR" Type="varchar" MaxLength="15" />
+    <Property Name="ISTIHAD" Type="varchar" MaxLength="15" />
+    <Property Name="AZAMIAGR" Type="varchar" MaxLength="15" />
+    <Property Name="KAPASITE" Type="varchar" MaxLength="15" />
+    <Property Name="DINGIL" Type="varchar" MaxLength="15" />
+    <Property Name="TEKERLEK" Type="varchar" MaxLength="15" />
+    <Property Name="KAVRAMA" Type="varchar" MaxLength="15" />
+    <Property Name="YEDEK1" Type="varchar" MaxLength="20" />
+    <Property Name="YEDEK2" Type="varchar" MaxLength="20" />
+    <Property Name="YEDEK3" Type="varchar" MaxLength="20" />
+    <Property Name="YEDEK4" Type="varchar" MaxLength="20" />
+    <Property Name="YEDEK5" Type="varchar" MaxLength="20" />
+    <Property Name="TEK_ADET" Type="varchar" MaxLength="20" />
+    <Property Name="ARAC_GRUP" Type="char" MaxLength="1" />
+    <Property Name="SINIFI" Type="varchar" MaxLength="15" />
+    <Property Name="TIP_ONAYNO" Type="varchar" MaxLength="50" />
+    <Property Name="AZAMI_YUKLU_KUTLE" Type="varchar" MaxLength="15" />
+    <Property Name="KATAR_YUKLU_KUTLE" Type="varchar" MaxLength="15" />
+    <Property Name="MBAK_PER_KM" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STOK">
+    <Key>
+      <PropertyRef Name="STOK_NO" />
+    </Key>
+    <Property Name="STOK_NO" Type="float" Nullable="false" />
+    <Property Name="STOK_ADI_TR" Type="varchar" MaxLength="45" />
+    <Property Name="STOK_ADI_ING" Type="varchar" MaxLength="60" />
+    <Property Name="BARKOD" Type="varchar" MaxLength="36" />
+    <Property Name="BARK_TIP" Type="varchar" MaxLength="1" />
+    <Property Name="STOK_KOD_NO" Type="varchar" MaxLength="25" />
+    <Property Name="ACILIS_TRH" Type="datetime" />
+    <Property Name="GRUP_NO" Type="varchar" MaxLength="11" />
+    <Property Name="PNC_NO" Type="varchar" MaxLength="11" />
+    <Property Name="PNCSUBNO" Type="varchar" MaxLength="9" />
+    <Property Name="BIRIMI" Type="char" MaxLength="5" />
+    <Property Name="KRITIK_SEV" Type="float" />
+    <Property Name="SIPARIS_SEV" Type="float" />
+    <Property Name="HEDEF_SEV" Type="float" />
+    <Property Name="FYT_TRH" Type="datetime" />
+    <Property Name="ALIS_FYT_TL" Type="float" />
+    <Property Name="ALIS_FYT_USD" Type="float" />
+    <Property Name="ALIS_FYT_DOVIZ" Type="float" />
+    <Property Name="SAT_FYT_TL" Type="float" />
+    <Property Name="SAT_FYT_USD" Type="float" />
+    <Property Name="SAT_FYT_DOVIZ" Type="float" />
+    <Property Name="FYT_KUR" Type="char" MaxLength="5" />
+    <Property Name="KDV" Type="int" />
+    <Property Name="SIPARIS_SURESI" Type="float" />
+    <Property Name="ISKONTO_GRP" Type="int" />
+    <Property Name="VERGILER" Type="float" />
+    <Property Name="MALIYET_FYT_TL" Type="float" />
+    <Property Name="MALIYET_FYT_USD" Type="float" />
+    <Property Name="MALIYET_FYT_DOVIZ" Type="float" />
+    <Property Name="KAR_ORAN" Type="float" />
+    <Property Name="AMBALAJ_NO" Type="varchar" MaxLength="11" />
+    <Property Name="ACIKLAMA" Type="text" />
+    <Property Name="RESIM_NO" Type="smallint" />
+    <Property Name="KOORX" Type="smallint" />
+    <Property Name="KOORY" Type="smallint" />
+    <Property Name="ESKI_PART_NO" Type="varchar" MaxLength="25" />
+    <Property Name="KAYNAK" Type="varchar" MaxLength="15" />
+    <Property Name="ETIKET" Type="int" />
+    <Property Name="WIRACC0" Type="char" MaxLength="1" />
+    <Property Name="WIRACC1" Type="char" MaxLength="1" />
+    <Property Name="WIRATD" Type="char" MaxLength="1" />
+    <Property Name="PUTRA" Type="char" MaxLength="1" />
+    <Property Name="SATRIA" Type="char" MaxLength="1" />
+    <Property Name="QTY" Type="float" />
+    <Property Name="RAF_YERI" Type="char" MaxLength="10" />
+    <Property Name="CLAIM_TUR" Type="char" MaxLength="1" />
+    <Property Name="PAY" Type="char" MaxLength="1" />
+    <Property Name="ORJ" Type="char" MaxLength="1" />
+    <Property Name="MUH_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_IADE_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_IADE_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_ISK_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_ISK_S" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_KDV_A" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_KDV_S" Type="varchar" MaxLength="30" />
+    <Property Name="YENI_KOD" Type="varchar" MaxLength="25" />
+    <Property Name="YENI_KOD_SON" Type="varchar" MaxLength="25" />
+    <Property Name="MUH_GRSAT" Type="varchar" MaxLength="30" />
+    <Property Name="MUH_GRSATISK" Type="varchar" MaxLength="30" />
+    <Property Name="MODEL_NO" Type="char" MaxLength="15" />
+    <Property Name="MERKEZ" Type="tinyint" />
+    <Property Name="MALIYET_ORAN" Type="float" />
+    <Property Name="REKABET" Type="smallint" />
+    <Property Name="MARKAKOD" Type="varchar" MaxLength="15" />
+    <Property Name="ALTGRUP_NO" Type="varchar" MaxLength="11" />
+    <Property Name="ISKGRUP" Type="varchar" MaxLength="11" />
+    <Property Name="ATILSTK_ISK" Type="float" />
+    <Property Name="INS_DATE" Type="datetime" />
+    <Property Name="INS_USER" Type="varchar" MaxLength="32" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_USER" Type="varchar" MaxLength="32" />
+    <Property Name="SONALIS_FYT_TL" Type="float" />
+    <Property Name="SONALIS_FYT_DOVIZ" Type="float" />
+    <Property Name="URET_STK_KOD" Type="varchar" MaxLength="30" />
+    <Property Name="GARANTI_BELGE" Type="char" MaxLength="1" />
+    <Property Name="SERITAKIP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityContainer Name="EROTO2020ModelStoreContainer">
+    <EntitySet Name="ARAC" EntityType="Self.ARAC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CARI" EntityType="Self.CARI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ISEAYRIN" EntityType="Self.ISEAYRIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ISEMRI" EntityType="Self.ISEMRI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MODEL" EntityType="Self.MODEL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="STOK" EntityType="Self.STOK" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
